@@ -1,0 +1,582 @@
+:root {
+    --pointer: black;
+    --primary-color: #f4e5a7;
+    --inner-box: #fef3c7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(231, 198, 203);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(2.5);
+}
+
+.box {
+    width: 100px;
+    height: 200px;
+    background-color: var(--primary-color);
+    position: relative;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 16px 16px 95px black;
+}
+
+.box-mid-up {
+    width: 50px;
+    height: 14px;
+    background-image: linear-gradient(to right, #723911, #e7ba48);
+    position: absolute;
+    border-radius: 6px;
+    top: -6px;
+    left: 25px;
+}
+
+.box-mid-down {
+    width: 50px;
+    height: 14px;
+    background-image: linear-gradient(to right, #262626, #5a4614);
+    position: absolute;
+    border-radius: 6px;
+    bottom: -5px;
+    left: 25px;
+}
+
+.box-left {
+    width: 30px;
+    height: 200px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: -26px;
+    top: -2px;
+    border-radius: 100% 0% 0% 100% / 50% 46% 54% 50%;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.box-right {
+    width: 30px;
+    height: 200px;
+    background-color: var(--primary-color);
+    position: absolute;
+    right: -26px;
+    top: -2px;
+    border-radius: 0% 100% 100% 0% / 50% 46% 54% 50%;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.patch-left-up {
+    width: 8px;
+    height: 25px;
+    position: absolute;
+    background-color: var(--primary-color);
+}
+
+.patch-left-bottom {
+    width: 8px;
+    height: 22px;
+    position: absolute;
+    bottom: 1px;
+    background-color: var(--primary-color);
+}
+
+.patch-right-up {
+    width: 8px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    background-color: var(--primary-color);
+}
+
+.patch-right-bottom {
+    width: 8px;
+    height: 22px;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    z-index: 1;
+    background-color: var(--primary-color);
+}
+
+
+.inner-box {
+    z-index: 1;
+    width: 70px;
+    height: 150px;
+    background-color: var(--inner-box);
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    border-top: 1px solid rgb(213, 187, 187);
+    border-bottom: 1px solid rgb(213, 187, 187);
+}
+
+.inner-box-left {
+    width: 20px;
+    height: 150px;
+    background-color: var(--inner-box);
+    position: absolute;
+    left: -20px;
+    top: -1px;
+    border-radius: 100% 0% 0% 100% / 50% 30% 70% 50%;
+    border-left: 1px solid rgb(213, 187, 187);
+    border-top: 1px solid rgb(213, 187, 187);
+    border-bottom: 1px solid rgb(213, 187, 187);
+}
+
+.inner-box-right {
+    width: 20px;
+    height: 150px;
+    background-color: var(--inner-box);
+    position: absolute;
+    right: -20px;
+    top: -1px;
+    border-radius: 0% 100% 100% 0% / 50% 46% 54% 50%;
+    border-right: 1px solid rgb(213, 187, 187);
+    border-top: 1px solid rgb(213, 187, 187);
+    border-bottom: 1px solid rgb(213, 187, 187);
+}
+
+.time1 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: -3px;
+}
+
+.time1-dot {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+    right: 9px;
+}
+
+.time2 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 40px;
+    right: -8px;
+}
+
+.time2-dot {
+    width: 1.5px;
+    height: 2px;
+    border-radius: 60%;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    right: 5px;
+}
+
+.time3 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 65px;
+    right: -8px;
+}
+
+.time3-dot {
+    width: 1.5px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 73px;
+    right: 4px;
+}
+
+.time4 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 89px;
+    right: -8px;
+}
+
+.time4-dot {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 95px;
+    right: 6px;
+}
+
+.time5 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 115px;
+    right: 0px;
+}
+
+.time5-dot {
+    width: 1.7px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 113px;
+    right: 13px;
+}
+
+.time6 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 130px;
+    right: 30px;
+}
+
+.time6-dot {
+    width: 1.9px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 128px;
+    right: 34px;
+}
+
+.time7 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 115px;
+    left: 0px;
+}
+
+.time7-dot {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 113px;
+    left: 11px;
+}
+
+.time8 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 89px;
+    left: -8px;
+}
+
+.time8-dot {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 94px;
+    left: 5px;
+}
+
+.time9 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 65px;
+    left: -8px;
+}
+
+.time9-dot {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 73px;
+    left: 4px;
+}
+
+.time10 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 40px;
+    left: -12px;
+}
+
+.time10-dot {
+    width: 2px;
+    height: 1.8px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+}
+
+.time11 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    left: -5px;
+}
+
+.time11-dot {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+    left: 9px;
+}
+
+.time12 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    right: 32px;
+
+}
+
+.time12-dot {
+    width: 2px;
+    height: 1.5px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    right: 32px;
+}
+
+.ajanta {
+    position: absolute;
+    top: 30px;
+    left: 23px;
+    font-size: 10px;
+}
+
+.quartz {
+    position: absolute;
+    top: 40px;
+    left: 33px;
+    font-size: 4px;
+}
+
+.ajanta-dot {
+    position: absolute;
+    top: 29px;
+    left: 47px;
+    height: 4.4px;
+    width: 4px;
+    border-radius: 50%;
+    border: 0.8px solid black;
+}
+
+.ajanta-inner-dot {
+    position: absolute;
+    top: 0.7px;
+    left: 0.5px;
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.about {
+    font-size: 3px;
+    position: absolute;
+    top: 120px;
+    right: 28px;
+}
+
+.mid-pointer-1 {
+    font-size: 3px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    right: 31px;
+}
+
+.mid-pointer-2 {
+    font-size: 3px;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #FFD700;
+    position: absolute;
+    top: 72.5px;
+    right: 33.3px;
+}
+
+.hour-pointer {
+    font-size: 3px;
+    height: 3px;
+    width: 24px;
+    background-color: black;
+    position: absolute;
+    top: 73px;
+    right: 11.24px;
+    border-radius: 0px 2px 2px 0px;
+    transform-origin: left;
+    animation: motion 43200s infinite;
+}
+
+.minute-pointer {
+    font-size: 3px;
+    height: 46px;
+    width: 2px;
+    background-color: black;
+    position: absolute;
+    top: 28.5px;
+    right: 34.3px;
+    background-color: black;
+    border-radius: 2px 2px 0px 0px;
+    transform-origin: bottom;
+    animation: motion 3600s infinite;
+}
+
+.second-pointer {
+    font-size: 3px;
+    height: 37px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 37px;
+    right: 34.5px;
+    border-radius: 2px 2px 0px 0px;
+    transform-origin: bottom;
+    animation: motion 60s infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.second-pointer-down {
+    font-size: 3px;
+    height: 8px;
+    width: 3px;
+    background-color: black;
+    position: absolute;
+    top: 74px;
+    right: 33.5px;
+    transform-origin: top;
+    animation: motion 60s infinite;
+    border-radius: 5px 5px 0px 0px;
+}
+
+@keyframes motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(36deg);
+    }
+
+    20% {
+        transform: rotate(72deg);
+    }
+
+    30% {
+        transform: rotate(96deg);
+    }
+
+    40% {
+        transform: rotate(144deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    60% {
+        transform: rotate(216deg);
+    }
+
+    70% {
+        transform: rotate(252deg);
+    }
+
+    80% {
+        transform: rotate(288deg);
+    }
+
+    90% {
+        transform: rotate(324deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        transform: scale(1.5);
+    }
+}
+
+/* 
+0% {
+    transform: rotate(0deg);
+}
+
+1.67% {
+    transform: rotate(6deg);
+}
+
+3.34% {
+    transform: rotate(12deg);
+}
+
+5.01% {
+    transform: rotate(18deg);
+}
+
+6.68% {
+    transform: rotate(24deg);
+}
+
+8.35% {
+    transform: rotate(30deg);
+}
+
+10.02% {
+    transform: rotate(36deg);
+}
+
+11.69% {
+    transform: rotate(42deg);
+}
+
+13.36% {
+    transform: rotate(48deg);
+} */
