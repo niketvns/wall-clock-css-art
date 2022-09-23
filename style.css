@@ -447,7 +447,7 @@ body {
     right: 11.24px;
     border-radius: 0px 2px 2px 0px;
     transform-origin: left;
-    animation: motion 43200s infinite;
+    /* animation: motion 43200s infinite; */
 }
 
 .minute-pointer {
@@ -461,7 +461,7 @@ body {
     background-color: black;
     border-radius: 2px 2px 0px 0px;
     transform-origin: bottom;
-    animation: motion 3600s infinite;
+    /* animation: motion 3600s infinite; */
 }
 
 .second-pointer {
@@ -493,7 +493,7 @@ body {
 @keyframes motion {
 
     0% {
-        transform: rotate(0deg);
+        /* transform: rotate(0deg); */
     }
 
     1.67% {
