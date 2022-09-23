@@ -439,14 +439,14 @@ body {
 
 .hour-pointer {
     font-size: 3px;
-    height: 3px;
-    width: 24px;
+    height: 24px;
+    width: 3px;
     background-color: black;
     position: absolute;
-    top: 73px;
-    right: 11.24px;
-    border-radius: 0px 2px 2px 0px;
-    transform-origin: left;
+    top: 50px;
+    right: 34px;
+    border-radius: 2px 2px 0px 0px;
+    transform-origin: bottom;
     /* animation: motion 43200s infinite; */
 }
 

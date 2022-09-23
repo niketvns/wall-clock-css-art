@@ -6,11 +6,14 @@ var second_pointer = document.querySelector("#second-pointer");
 
 function getExactTime() {
     var hour_full = new Date().getHours();
+
     if (hour_full >= 12) {
         var hour = hour_full - 12;
+    } else {
+        var hour = hour_full;
     }
     var minute = new Date().getMinutes();
-    var rotate_hour = Math.abs(hour - 3);
+    var rotate_hour = hour;
     var angle_rotation_hour = rotate_hour * 30;
     var angle_rotation_minute = minute * 6;
     const deg_hour = angle_rotation_hour;
