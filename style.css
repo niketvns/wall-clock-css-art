@@ -22,7 +22,6 @@ body {
 .container {
     width: 300px;
     height: 300px;
-    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -476,7 +475,6 @@ body {
     border-radius: 2px 2px 0px 0px;
     transform-origin: bottom;
     animation: motion 60s infinite;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 .second-pointer-down {
@@ -737,52 +735,6 @@ body {
     100% {
         transform: rotate(360deg);
     }
-
-
-
-    /* 0% {
-        transform: rotate(0deg);
-    }
-
-    10% {
-        transform: rotate(36deg);
-    }
-
-    20% {
-        transform: rotate(72deg);
-    }
-
-    30% {
-        transform: rotate(96deg);
-    }
-
-    40% {
-        transform: rotate(144deg);
-    }
-
-    50% {
-        transform: rotate(180deg);
-    }
-
-    60% {
-        transform: rotate(216deg);
-    }
-
-    70% {
-        transform: rotate(252deg);
-    }
-
-    80% {
-        transform: rotate(288deg);
-    }
-
-    90% {
-        transform: rotate(324deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    } */
 }
 
 @media screen and (max-width:600px) {
@@ -790,76 +742,3 @@ body {
         transform: scale(1.5);
     }
 }
-
-
-/* 0% {
-    transform: rotate(0deg);
-}
-
-1.67% {
-    transform: rotate(6deg);
-}
-
-3.34% {
-    transform: rotate(12deg);
-}
-
-5.01% {
-    transform: rotate(18deg);
-}
-
-6.68% {
-    transform: rotate(24deg);
-}
-
-8.35% {
-    transform: rotate(30deg);
-}
-
-10.02% {
-    transform: rotate(36deg);
-}
-
-11.69% {
-    transform: rotate(42deg);
-}
-
-13.36% {
-    transform: rotate(48deg);
-} 
-
-15.03 {
-    transform: rotate(54deg);
-}
-
-16.7% {
-    transform: rotate(60deg);
-}
-
-18.37% {
-    transform: rotate(66deg);
-}
-
-20.04% {
-    transform: rotate(72deg);
-}
-
-21.71% {
-    transform: rotate(78deg);
-}
-
-23.38% {
-    transform: rotate(86deg);
-} 
-
-25.05% {
-    transform: rotate(92deg);
-}
-
-26.72% {
-    transform: rotate(98deg);
-}
-
-28.39% {
-    transform: rotate(106deg);
-}  */
